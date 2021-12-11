@@ -1,6 +1,6 @@
-from django.http.response import HttpResponse
+ 
 from django.shortcuts import render
-from django.http import HttpResponse
+ 
 
-def Blog (request):
-    return HttpResponse('Blog')
+def post_list (request):
+    return  render(request, 'blog/post_list.html',{})
